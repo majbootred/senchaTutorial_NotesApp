@@ -85,7 +85,7 @@ Ext.define("NotesApp.view.NoteEditor", {
 	},
 	
 	onBackButtonTap: function () {
-	    console.log("backToHomeCommand");
+	    console.log("backToHomeCommand // view");
 	    this.fireEvent("backToHomeCommand", this);
 	}
 

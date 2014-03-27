@@ -16,7 +16,8 @@ Ext.define("NotesApp.controller.Notes", {
             noteEditor: {
                 // The commands fired by the note editor.
                 saveNoteCommand: "onSaveNoteCommand",
-                deleteNoteCommand: "onDeleteNoteCommand"
+                deleteNoteCommand: "onDeleteNoteCommand",
+                backToHomeCommand: "onBackToHomeCommand"
             }
         }
     },
@@ -113,6 +114,12 @@ Ext.define("NotesApp.controller.Notes", {
 
         this.activateNotesList();
     },
+
+        onBackToHomeCommand: function () {
+
+            console.log("onBackToHomeCommand // controller");
+            this.activateNotesList();
+        },
 
     // Base Class functions.
     launch: function () {
